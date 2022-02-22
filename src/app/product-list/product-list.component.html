@@ -1,11 +1,11 @@
-<h2>Products</h2>
+<h2>Fmcg Products</h2>
 
 <div *ngFor="let product of products">
   <h3>
     <!-- property binding -->
-    <a 
-    [title]="product.name + ' details'"
-    [routerLink]="['/products',product.id]"
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
     >
       <!-- string interpolation (data binding) -->
       {{ product.name }}
@@ -16,9 +16,11 @@
   <!-- event binding -->
   <button type="button" (click)="share()">Share</button>
   &nbsp;
-  <div >
-    <app-product-alerts [productInside]="product"
-    (notify)="onNotify()"></app-product-alerts>
+  <div>
+    <app-product-alerts
+      [productInside]="product"
+      (notify)="onNotify()"
+    ></app-product-alerts>
   </div>
   &nbsp;
   <!-- <button type="button" (click)="buy()">Buy</button> -->
