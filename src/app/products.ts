@@ -1,34 +1,51 @@
 export interface Product {
-  id: number;
-  name: string;
+  avalibility_QUALITY: number;
+  expiry_DATE: String;
   price: number;
-  description: string;
+  id: number;
+  name: String;
+  description: String;
 }
 
 export const products = [
   {
+    avalibility_QUALITY: 100,
+    expiry_DATE: '2022-09-08',
+    price: 50,
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'Britannia',
+    description: 'A Moments of tasty Surprise',
   },
   {
-    id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    avalibility_QUALITY: 100,
+    expiry_DATE: '2022-10-08',
+    price: 500,
+    id:  2,
+    name: 'Clinic Plus',
+    description: 'The shampoo of the future',
   },
   {
+    avalibility_QUALITY: 100,
+    expiry_DATE: '2022-10-08',
+    price: 701,
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
+    name: 'Amul',
+    description: 'The joy of Getting Best Bite',
+  },
+  {
+    avalibility_QUALITY: 100,
+    expiry_DATE: '2022-10-08',
+    price: 561,
+    id: 4,
+    name: 'Aavin',
+    description: 'Your Favourite Tea Partner',
+  },
+  {
+    avalibility_QUALITY: 100,
+    expiry_DATE: '2022-10-08',
+    price: 792,
+    id: 5,
+    name: 'Colgate',
+    description: ' Moments of tasty Surprise',
+  },
 ];
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
