@@ -1,10 +1,10 @@
 export interface Product {
   avalibility_QUALITY: number;
-  expiry_DATE: String;
+  expiry_DATE: string;
   price: number;
   id: number;
-  name: String;
-  description: String;
+  name: string;
+  description: string;
 }
 
 export const products = [
